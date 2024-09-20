@@ -1,0 +1,35 @@
+html, body {
+    margin:0;
+    padding: 0;
+    background-color: #aaa;
+}
+
+.relogio { /*Para puxar uma TAG referenciada no HTML, deve-se usar um . */
+    border: 2px solid red; /*Criando uma borda pra DIV, 2 pixels e solid porque é uma linha contínua*/
+    height: 100vh; /*Está falando pra DIV ocupar 100% da tela*/
+    display: flex; /*Posiciona tudo lado a lado*/
+    flex-direction:column;  /*Corrigindo posião*/
+    align-items: center; /*Centraliza a DIV na parte superior do site*/
+    justify-content: center; /*Finaliza o processo de centralizar a DIV no meio do site*/
+}
+
+.display {
+    background-color: #2C2E43;
+    width: 300px; /*Definindo a largura da DIV*/
+    height: 200px; /*Definindo a altura da DIV*/
+    text-align: center; /*Serve apenas para alinhar o centro superior, não é o caso da DIV Relógio que possui mais propriedades*/
+    line-height: 200px; /*Altura da linha, tem que ser igual a altura da DIV para alinhar no centro*/
+    border-radius:10px; /*Arredondar os cantos*/
+    color: #fff;
+    font-size: 7rem;/*Cada REM vale 16 Pixels, estou aumentando o tamanho da fonte*/
+    border: 10px solid #ffd523;
+    font-family: "Qahiri", sans-serif;
+    
+}
+
+footer {
+    font-size: 2rem;
+    margin-top:10px ; /*Distanciando um pouco da DIV de cima*/
+    color: #333;
+    font-family: "Barlow Condensed", sans-serif;
+}

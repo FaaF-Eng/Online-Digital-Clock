@@ -1,35 +1,84 @@
-html, body {
-    margin:0;
-    padding: 0;
-    background-color: #aaa;
+html,body{
+    margin:0 ;
+    background-color: rgb(179, 179, 179);
 }
 
-.relogio { /*Para puxar uma TAG referenciada no HTML, deve-se usar um . */
-    border: 2px solid red; /*Criando uma borda pra DIV, 2 pixels e solid porque é uma linha contínua*/
-    height: 100vh; /*Está falando pra DIV ocupar 100% da tela*/
-    display: flex; /*Posiciona tudo lado a lado*/
-    flex-direction:column;  /*Corrigindo posião*/
-    align-items: center; /*Centraliza a DIV na parte superior do site*/
-    justify-content: center; /*Finaliza o processo de centralizar a DIV no meio do site*/
+.relogio{
+    border: 2px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
 }
 
-.display {
-    background-color: #2C2E43;
-    width: 300px; /*Definindo a largura da DIV*/
-    height: 200px; /*Definindo a altura da DIV*/
-    text-align: center; /*Serve apenas para alinhar o centro superior, não é o caso da DIV Relógio que possui mais propriedades*/
-    line-height: 200px; /*Altura da linha, tem que ser igual a altura da DIV para alinhar no centro*/
-    border-radius:10px; /*Arredondar os cantos*/
+.display{
+    background-color: rgb(92, 92, 86);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
     color: #fff;
-    font-size: 7rem;/*Cada REM vale 16 Pixels, estou aumentando o tamanho da fonte*/
+    font-size: 5rem;
     border: 10px solid #ffd523;
-    font-family: "Qahiri", sans-serif;
-    
 }
 
-footer {
+footer{
     font-size: 2rem;
-    margin-top:10px ; /*Distanciando um pouco da DIV de cima*/
+    margin-top: 10px;
     color: #333;
-    font-family: "Barlow Condensed", sans-serif;
+}
+
+/*Conjunto de Aplicações para o código todo*/
+:root{
+    --yellow: #ffd523;
+    --white: #fff;
+    --black: #000;
+    --grey:  rgb(92, 92, 86);
+    --lightgrey:  rgb(179, 179, 179);
+
+    /*Código para mudar o seletor de BODY atual*/
+*{
+    color: var(--fontColor);
+}
+    body{
+    background-color: var(--background);
+    }
+}
+
+.light-theme{
+--background: var(--lightgrey);
+--fontColor: var(--white);
+/*Adicionando o Botão*/
+--background: var(--lightgrey);
+--botaoBg:  var(--black);
+--botaoFontColor:var(--yellow);
+}
+
+.dark-theme{
+--background: var(--black);
+--fontColor: var(--yellow);
+/*Adicionando o Botão*/
+--background: var(--black);
+--botaoBg:  var(--yellow);
+--botaoFontColor:var(--black);
+
+}
+.botão :focus {outline-style: none;}
+
+/*Criando o Botão Arredondado*/
+.botão{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex; /* Adicina Flexbox */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    color: var(--botaoFontColor);
+    background-color: var(--botaoBg);
+    text-align: center;
 }

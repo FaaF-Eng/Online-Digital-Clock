@@ -1,4 +1,4 @@
-//Projeto de Relófio Digital com JavaScript - Por Fábio Teixeira
+//Projeto de Relógio Digital com JavaScript - Por Fábio Teixeira
 
 function atualizarTempo(){
 

@@ -10,6 +10,8 @@
 
 > Um site simples com a funcionalidade de exibir o horário do seu dispositivo, incluindo a função de modo escuro e modo claro.
 
+Link do projeto: https://faaf-eng.github.io/Online-Digital-Clock/
+
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
